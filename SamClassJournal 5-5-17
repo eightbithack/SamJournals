@@ -1,0 +1,45 @@
+Ok, so my goal today is to begin reading through the intro article that Ahmed sent me (major props to him) about the introductory concepts of machine learning.
+Link is: http://neuralnetworksanddeeplearning.com/chap1.html
+I'll be reading and taking notes through these two periods.
+
+NOTES: 
+visual recognition, brain as a supercomputer, unconscious work done by brain for numbers
+difficult to express visual concepts algorithmically 
+use of training examples to bypass difficulty
+more data = better intelligence
+handwriting good example
+perceptrons take many binary inputs and produce one binary output
+each input has a weight that determines its relevence to the output
+determines if weighted sum is less or greater than threshold for output
+weights model the ways decisions are made cognitively
+BELL ONE RINGS AT THIS POINT
+using a network of perceptrons can result in more complex decisions, multilayered
+perceptrons always have one output
+perception rule becomes w * x + b, o if less than 0 and 1 if greater, where w is weight, x is input, and b is threshold
+bias as a measure of how easy it is to trigger output
+perceptrons can do logical operations like AND/OR/NAND
+NAND can be simulated by a perceptron with two inputs weighted -2 and a bias of 3
+use a extra layer of perceptrons, the input layer, to encode inputs
+notation includes no input lines for input layer
+can devise learning algorithms that automatically tune weights and biases in response to stimuli
+can learn to solve problems
+Sigmoid Neurons
+we want small changes in weights to result in small changes in outputs
+this would allow us to make the network behave more like what we want
+the problem is that perceptrons will often cause huge changes to output with small input changes
+introduce sigmoid neuron instead
+like perceptron, but small changes in weights only cause small output changes
+sigmoid neuron inputs can be any number from 0 to 1
+each input still has weights and biases, but output is theta(w*x+b), where theta is sigmoid function
+sigmoid function is theta(z) = 1/1+e^-z
+algebraic understanding of sigmoid hard
+examples: if z is large and positive, output should be one
+if z is large and negative, output is roughly zero same as above but different way
+deviation from perceptron comes in between extremes
+smoothness of sigmoid function results in small changes to output with small weights changes
+sigmoid function is most simple algebra equation to compute the partial derivatives later
+can use conventions to make sigmoids produce binary inputs, ie create thresholds for evaluating inputs
+Architecture of Neural Networks
+there's also an output layer, with the layers in between in and out being the hidden layers
+sometimes multilayer networks are called multilayer perceptrons, or MLPs, even if not perceptrons
+MOVING TO END OF CLASS JOURNAL
