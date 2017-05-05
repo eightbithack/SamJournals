@@ -2,6 +2,9 @@ Ok, so my goal today is to begin reading through the intro article that Ahmed se
 Link is: http://neuralnetworksanddeeplearning.com/chap1.html
 I'll be reading and taking notes through these two periods.
 
+
+
+
 NOTES: 
 visual recognition, brain as a supercomputer, unconscious work done by brain for numbers
 difficult to express visual concepts algorithmically 
@@ -43,3 +46,9 @@ Architecture of Neural Networks
 there's also an output layer, with the layers in between in and out being the hidden layers
 sometimes multilayer networks are called multilayer perceptrons, or MLPs, even if not perceptrons
 MOVING TO END OF CLASS JOURNAL
+
+
+
+
+Result: Today I began a reading recommended to me as a way to grasp the fundamental basics of a neural network. I'm halfway through chapter 1, notes from my reading are above
+Tonight: I plan to continue reading through the above article from the subsection on Architecture onwards and spend a half hour watching the first class from the videos you forwarded me. Due to a disruption in my schedule that will occur today due to a family birthday, my goal for Monday is to finish my notation of the article and watch all of class one by Monday, with additional goals added as I complete the listed ones.
