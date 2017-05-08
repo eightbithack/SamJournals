@@ -1,0 +1,10 @@
+Okay, so weekend work didn't work out, pun intended, due to my dad's birthday celebrations, so I'll be working through my lunch period to make sure that today's goal of finishing the article from Ahmed.
+Link is the same as the last time, I'll finish note-taking through period 5 in Connell's room and period 8
+
+NOTES: 
+Outer and inner layers often simple, hidden layers less so
+Use design heuristics to maximize efficiency regarding training time to number of hidden layers 
+feedforward loops - loops where data only ever moves forward, not back
+feedback loops are occasionally used, recurrent networks
+recurrent less initially successful, more complex learns slower, but work for specific problems, more like brain
+
