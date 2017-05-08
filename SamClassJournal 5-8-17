@@ -7,4 +7,21 @@ Use design heuristics to maximize efficiency regarding training time to number o
 feedforward loops - loops where data only ever moves forward, not back
 feedback loops are occasionally used, recurrent networks
 recurrent less initially successful, more complex learns slower, but work for specific problems, more like brain
+COMPUTER FAILED HERE
+PERIOD 8
+A Simple Network
+break number recognition into two problems - digit recognition and digit separation
+can solve separation with recognition, test trial methods through a learning system that evaluates split digits, using confidence in results to determine effectiveness of method
+MNIST dataset for handwritten integers
+Learning With Gradient Descent
+training wants to make it so that if y(x) = y where y is the output you want, x should always be right 
+you want an algorithm that lets you find the weights and biases to make the above thing happen
+you use Cost Functions (equation C(w,b) = 1/2n Sum lower x ||y(x) - a||^2, where w is all the weights, b the biases, n the total number of training inputs, a the desired vector output, and y(x) the column vector produced by the outer layer)
+((((Nockles Vector explanation: each of the output neurons represents an axis on a n axis array, where n is equal to the total number of outputs. the numbers in the array each represent vectors along that n-dimensional array, with a then being the coodinates of the ideal point)))
+the cost function approaches zero as the y output gets closer and closer to zero
+to actually find efficiency we use Gradient Descent
+quadratic cost (equation above) best method to determine effectiveness of small changes in weights and biases
+our goal is to find weights and biases that minimize the quadratic cost equation seen above
+
+
 
