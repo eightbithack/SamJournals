@@ -22,6 +22,11 @@ the cost function approaches zero as the y output gets closer and closer to zero
 to actually find efficiency we use Gradient Descent
 quadratic cost (equation above) best method to determine effectiveness of small changes in weights and biases
 our goal is to find weights and biases that minimize the quadratic cost equation seen above
+creating a three-dimensional representation of C, r1, and r2, your goal is to locate the minimum possible value of C
+calculus doesn't work with the number of overall variables you'd need to accomplish your goal most of the time
+MOVING TO END OF CLASS NOTES
 
+Today I've delved into some of the complicated mathematical elements of learning algorithms, beginning to grasp the ways that we can make functions more efficient and test for that efficiency
+Tonight and tomorrow I plan to continue reading through this article and finishing the first class on youtube.
 
 
