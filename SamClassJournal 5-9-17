@@ -1,0 +1,23 @@
+Given that I have THREE periods to work on this, I'd hope I'd be able to complete at least the rest of the article, although we are getting into a very complex part of it, so it's the goal for now.
+
+PERIOD 5
+NOTES: 
+utilize ball-rolling method (if graph is valley, simulate a ball falling to the absolute minimum) to find min
+ignoring most physics for representation - metaphor
+delta C = aC/aV1 * delta v1 + aC/aV2 * delta v2
+we need to choose a v1 and v2 to make delta c negative
+delta v is the vector of changes in delta v1 delta v2
+the gradient of c is the partial derivatives (aC/aV1, aC/aV2)^T
+delta C therefore = the gradient of c * delta V
+gradient C relates changes in v to changes in c
+delta v = -n * gradient of C, where n is a small positive parameter representing the learning rate
+repeat the process of decreasing the v value until you arrive at zero
+learning rate needs to be small so that the equation is a good approximation, but not so small that the algorithm takes years
+further ball mimicing can improve accuracy, but forces you to calculate second derivatives, which is task-intensive
+we then use weights and biases as the coordinates for the gradient and work from there
+learning takes forever because you need to calculate the gradient for each training input and then average
+can use stochastic gradient descent to speed things up, which calculates the gradient for a small sample of randomly chosen inputs, speeding up the acquisition of the final thing
+similar to election polling in purpose, if not validity :)
+ways to think in higher dimensions: https://mathoverflow.net/questions/25983/intuitive-crutches-for-higher-dimensional-thinking
+Implementation
+PERIOD 5 ENDS HERE
