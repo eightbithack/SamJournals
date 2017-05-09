@@ -21,3 +21,32 @@ similar to election polling in purpose, if not validity :)
 ways to think in higher dimensions: https://mathoverflow.net/questions/25983/intuitive-crutches-for-higher-dimensional-thinking
 Implementation
 PERIOD 5 ENDS HERE
+PERIOD 7
+use of validation data - aka, data used after the network is trained in order to set hyperparameters like learning speed. split the original dataset accordingly
+Skipping Python stuff that I don't understand....
+deep learning uses a ton of hidden layers
+
+moving on to video
+Class 1/16, part 1/3
+don't use neural networks on problems with procedural solutions (can be expressed with a flow chart)
+don't use them for problems where you need to know everything about the process
+game logic is pushing neural networks
+pattern recognition is another big use
+classification/grouping as well
+prediction is another good use
+training and validation is key to a good network, validation key to check whether it works in general or just worked for your data set
+supervised training when you have the input and the right answer, unsupervised without
+
+Class 1/16, part 2/3
+spam detection is a way classification neural networks can be used
+morgage risk is another way of classification
+prediction works by assessing patterns
+pattern recognition another classic form, kinds of signs or symbols, etc
+optimization - traveling salesman problem
+
+Class 1/16, part 3/3
+basic perceptron network to do XOR
+
+
+I finished class 1 and extracted all relevant info from the article today
+tomorrow we go to class 2
