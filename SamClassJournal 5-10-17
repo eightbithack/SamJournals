@@ -1,0 +1,11 @@
+FULL DISCLAIMER: The Wifi is ATROCIOUS today
+So the goal for today is to do some followup reading on what a BiPolar is in the context of Java, since I saw it mentioned regarding the way that Perceptrons are coded in Java
+
+NOTES FROM CHAPTER TWO OF HEATON BOOK
+
+can represent weights of inputs to outer neurons through a matrix
+okay, so bipolars seem to have a mutually conflicting definition. on one hand, the book explicitly defines a bipolar
+nvmd, the explanation you gave makes perfect sense. He's redefined what a boolean is so that he can use 1 and -1 in his later mathematical equations instead of 1 and 0, probably so that he can get a negative sloping curve for when he calculates stochastic gradient descent or when he's implementing a sigmoid neuron.
+
+Today, I've wrapped my head around the ways that Heaton takes the thoeretical concepts from the first article and begins to implement them through the lens of a Java programmer
+Tomorrow and tonight, I'll complete class 2
