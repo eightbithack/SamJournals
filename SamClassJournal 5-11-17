@@ -1,0 +1,27 @@
+Today's goal is simple: finish and take notes on classes 2 and 3 by tomorrow
+
+NOTES: 
+Class 2/16 Part 1/5
+matrixes are foundation of neural network programming
+classes avaible for matrix: BiPolarUtil, Matrix, MatrixMath
+bipolar is a way neural networks represent binary numbers with -1 and 1
+bipolar to double and vice versa are methods 
+matrix has create column/rowMatrix, add, clear, or clone
+matrix also has an equal function, a getter for cells/column(s)/rows
+also isvector, iszero, set (cell), sum, and toPackedArray to turn matrix into 1D array
+matrixmath can add, divide, dotProduct, identity, multiply, subtract, transpose, and vectorLength
+
+Class 2/16 Part 2/5
+weight matrices 
+weight matrix connecting internal layers
+also thresholds in the weight matrix
+combination of thresholds and weight values
+columns represent output neuron and rows represent input neurons?
+threshold values are placed at the bottom, with threshold values going in the column for their output neuron
+
+Class 2/16 Part 3/5
+matrix has multiple constructors, ex: new Matrix(rows, columns)
+initializes to all zeroes 
+can initialize a matrix to normal values when declaring it, feed in 2D array
+can create matrixes with a 1D array as well. row matrix is a function (createRowMatrix)
+can do the same with columns
