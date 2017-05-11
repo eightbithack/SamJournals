@@ -25,3 +25,59 @@ initializes to all zeroes
 can initialize a matrix to normal values when declaring it, feed in 2D array
 can create matrixes with a 1D array as well. row matrix is a function (createRowMatrix)
 can do the same with columns
+
+Class 2/16 Part 4/5
+matrix addition - add the numbers one by one in the same position
+dot product - any two vector matrixes with the same length, a vector matrix being one with only one row or column
+dot product is a number, multiply left to right top to bottom and add products
+matrix multiplication - more than one row/column
+cannot swap positions of matrixes, order matters
+need opposing numbers of rows/columns (i.e, two rows and two columns to three columns and three rows)
+each of the left pairs is multiplied with all the right pairs, with final placement depending on the left matrix
+sum of the digits from the row multiplied by the corresponding column digits
+an identiy matrix is always the same as the multiplied matrix of the same size
+scalar multiplication works, just multiply every number in the matrix by the scalar
+for subtraction, works like addition
+transposition takes the number of rows and columns and reverses them
+length of a vector is every element of a vector squared then you sum them and take the square root of the result
+
+Class 2/16 Part 5/5
+
+Bipolar a way to map booleans into the values needed for neural networks
+1 is true, -1 is false
+allows boolean numbers to be represented in a way that you can use?\
+f(x) = 2x-1 converts binary to bipolar
+f(x) = (x+1)/2 is bipolar to binary
+can create matrixes for booleans, using bipolar2double in the constructor
+BELL RINGS HERE
+
+Class 3/16 Part 1/5
+hopfield neural network
+a single layer of connected neurons both input and output
+layers are how the neural network makes decisions
+no hidden layers in hopfield
+in hopfield, all neurons are connected back to each other?
+each neuron in example connects to three others but not self - those are recurrent neural networks
+hopfield has no threshold values
+hopfield only accepts booleans, need to transform to bipolar
+hopfield needs to recognize inverse of pattern with pattern
+zeroes on matrix recurrent moments
+start with a empty weight matrix
+convert boolean to bipolar matrix then multiply the original matrix by the transposition then set diagonals to zeros
+it is then trained for binary
+
+Class 3/16 Part 2/5
+hopfield network is just one class, with the methods being a boolean array, a train method that takes a boolean array, a getmatrix, and a getsize
+present method used to give info to neural network, takes pattern to present then returns hopfield output
+output is a new boolean array, inputmatrix is converted to a bipolar row matrix
+then loop over every neuron in the pattern
+//At this point, I am faced with a decision on whether to begin coding now or tomorrow - given the limited time remaining to me in the period, I plan to watch as much as I can get through and code the example tomorrow
+then get a column matrix for the neuron we're working on
+then we transpose it and get a dot product of the input and column matrix
+if dotproduct is above 0 then true, else false
+DONE HERE
+
+today, I finally have picked up enough knowledge to begin coding a basic hopfield array for learning purposes
+that will be my goal for tonight/tomorrow
+
+
