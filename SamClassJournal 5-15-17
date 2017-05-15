@@ -52,3 +52,19 @@ keeps going to get as close as possible to a zero error rate
 should get to almost perfect, aka desired input
 Class 4/16, Part 2/5
 activation functions
+used to make sure the numbers are in a desireable range
+bunch of possible functions
+first, linear function of f(x) = x, mostly theoretical and not really an activation function, can't be used for backprogation because it has no useful derivative
+does pass through negative and positive values
+need to make sure your activation function fits the desired range of numbers you need
+sigmoidal activation function is f(x) = 1/1+e^-x
+default activation function for feedforward network example, and if you don't specify for his examples you use sigmoidal
+sigmoid function has no negative y values, don't use it for things with negative outputs like stock prices
+hyperbolic tangent function is f(x) = (e^2x - 1)/(e^2x +1), can be used for negatives
+can be used for backpropagation along with sigmoidal
+as x grows for hyperbolic functions, y flattens
+use hyperbolic for positive and negative and sigmoidal for positive
+MOVING TO END OF CLASS JOURNAL
+
+Today I finished my analysis of the java implementation of Hopfield networks and moved on to evaluating the pros and cons of different activation functions
+I plan to continue watching these videos so I can eventually examine his genetic algorithm function in greater detail
