@@ -1,0 +1,35 @@
+Today I'll be finishing up my listen-through about Hopfield networks (class 3) and moving on to class 4
+NOTES:
+console mode example for hotfield network
+creates hopfield of size 4, training with two boolean patterns, one to work and one to verify
+then displays pattern and training network with first pattern
+then pattern 1 is presented to the network, which should present it back
+then present pattern 2 and should get back pattern 1 since it's close enough to be recognized
+more complex example
+pattern drawing, will recall trained patterns if they're close to the current pattern
+Class 3/16, Part 4/5
+supervised learning, network is provided with a set of inputs, the input and the expected outputs are provided, trained by calculating drift from expected output and minimizing it
+keeps going through to minimize the error rates 
+unsupervised learning, provide the network with inputs but not outputs
+used with large amounts of data that you want the network to group, like optical character recognition
+adjusts weights using specific rules and algorithms over an arbitrary number of epochs
+hebb's rule?
+point of rules are to maximize groups
+error calculation, difference between expected and produced for supervised, unsupervised done by how evenly the data is distributed?
+can use the root mean square equation to calculate error
+this can calculate difference between actual and ideal, plugging in actual-ideal
+Class 3/16, Part 5/5
+delta and hebbs rule
+BELL RINGS
+hebbs rule reinforces what the network knows
+delta rule works for backpropagation, used to train the network to recognize a pattern
+hebbs rule is delta weight ij = learning rate of a sub i and a sub j
+learning rule would be rate*input*output
+hebbs rule reinforced the results and didn't effect zeroes
+delta rule explores dif between output and expected
+weight change = 2 * learning rate * x sub i (ideal-actual)
+supervised training algorithm dt ideal inclusion
+rate*input*(ideal-actual)
+constant 2 is often built into learning rate
+Class 4/16, part 1/5
+
