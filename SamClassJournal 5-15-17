@@ -32,4 +32,23 @@ supervised training algorithm dt ideal inclusion
 rate*input*(ideal-actual)
 constant 2 is often built into learning rate
 Class 4/16, part 1/5
-
+backpropagation and feedforward, 
+backpropagation is a training method, along with simulated and genetic algorithms 
+activation functions as well, a way that the output is scaled to appropriate values
+as well as sigmoidal and hyperbolic tangent
+example will be XOR, common example
+very simple 
+number of hidden layers is mostly trial and error
+examine hidden layers
+later will learn to prune hidden layer neurons
+feedforward neural network simple, always goes forward from input to output
+hidden layers are between inputs and outputs
+xor operator: not the same
+feedforward class later, can add layers to it with a number of neurons parameter
+then a trainer, with training values, momentum (how much of previous traing applied to this training)
+loops over iterations, displaying epoch number, until set number of epochs or low error rate
+then works with training data 
+keeps going to get as close as possible to a zero error rate
+should get to almost perfect, aka desired input
+Class 4/16, Part 2/5
+activation functions
