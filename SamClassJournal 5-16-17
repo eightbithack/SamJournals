@@ -1,0 +1,22 @@
+Today, I'm going to finish class 4
+
+NOTES:
+Class 4/16, Part 3/5
+Hidden layer, layers between input and output
+can change it, somewhat mysterious, since input/output are defined by problem
+hidden layer attributes trial and error or algorithms
+use pruning to increase efficiency, can't do to input/output
+a hidden layer can be changed, but you can't change input/output
+the more hidden layers there are, the more complex the solutions would be
+2 is for arbitrary decisions
+number of hidden neurons should be between the size of the input and output layers
+pruning lets you start with a larger number
+Class 4/16 Part 4/5
+output of feedforward is values times weights plus threshold? for each neuron
+output is sum i=o n (inputs * weights)
+bunch of specific methods to be reviewed at the conclusion of the class
+computeoutput method that does the work for you that takes a 1d array 
+I'M SHIFTING NOW TO ANALYZING CODE
+
+So I'm getting deep into the code for feedforward networks, just so I can make sure I have my head wrapped around it
+tomorrow I move on to class 5
