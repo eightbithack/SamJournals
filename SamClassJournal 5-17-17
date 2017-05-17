@@ -4,3 +4,22 @@ NOTES:
 closely examining feedforwardnetwork class
 moving on to an analysis of backpropagation, which determines how much each neuron contributes and resolves its error going backwards
 okay, I have finally reached class five and the genetic algorithms
+genetic algorithms another way to train network, two ways to do so
+can provide with a training set, or to get over local minimums as well?
+can also not provide a training set, just a way to tell whether the output was good or bad
+genetic algorithms, shockingly, are based on genetics, specifically dna
+represent the problem similar to the way dna is represnted, present as long sequence of elements
+convert problem to sequence of numbers allows gene algo to perform chromosomal crossover, can create molecules from two separate problems
+similar to breeding process, allows algorithm to quite literally evolve, combining two splices to make a new string
+ideally, kids are better suited to solve problem then parents
+kids are evaluted, least suitable ones can't breed
+can't pair two strings of differing length
+genes, chromosomes, and organisms mean different things
+genes are the individual numbers of a potential solution, a chromosome is strand of genes, and organisms are the combo of one/more chromosomes
+we breed two good solutions to make better ones
+cut points are places where the splices happen
+mutation can also happen, when random changes are introduced into a parent chromosome, which you do when the pool doesn't have the capacity to solve the problem
+going to examine code implementation
+STOPPING NOW
+
+We seem to be on the verge of functional capacity: a feedforward network trained genetically seems to be the way to go here. I just need more explanation on the specific hidden layers, which will hopefully be explained in the later videos as I continue through the course.
