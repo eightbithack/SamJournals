@@ -1,0 +1,17 @@
+Today I'm continuing my analysis of genetic algorithms
+
+NOTES: 
+Class 5/16 Part 2/5
+sets to prevent repitition, cuttting done at random points
+mate method called on mother with three chromo inputs?
+sometimes you want repeats, so you can have them then with set
+for loop that iterates to cutpoint, adds each half for each parent to a child, then adds to taken set
+then you flip the loop, this time checking for repeats if necessary
+then calculate cost for offspring - with cost being an indicator of the success of the lifeforms, ie error, arbitrary success, etc.
+use random numbers and a mutate threshold to randomly ensure mutations for the offspring
+Class 5/16 Part 3/5
+travelling salesman problem
+can't be solved with brute force
+FINISHING UP
+
+plan is to hopefully begin figuring out modifications to heaton code that will be necessary for pictogram recognition by Friday, setting out a gameplan for moving forward then
