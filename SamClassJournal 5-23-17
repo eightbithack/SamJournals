@@ -1,0 +1,30 @@
+Today I'm going to be reading and the example of the traveling salesman from heaton class 5 part 3
+
+NOTES: 
+problem gets super complicated as the number of cities increases
+genetic algorithm can get 50 cities easier
+constant number of genes between chromosomes since constant number of cities
+each chromosome represents separate paths with genes being cities
+genetic algorithm calculates the cost of the chromosomes, adding them up for total distance and reducing error when needed
+create swap points then create temp city to copy over? Ahhh mutatation works by swapping cities in the storage location
+part 4
+training xor with genetic algorithm
+turn weight matirx to 1D and make thme all strung together to make chromosome
+each weight matrix'll already have the same length too
+do you have a training set is early question
+if so, pass in the training data 
+main loop is similar to backprop, simulated amealing is similar, can sometimes use hybrid approaches, can free backprop from local minimums where it's stuck
+need to implement calculate cost and mutate
+uses ratios to do the changes to weights for the string to ensure a similar range but also somewhat different
+part 5
+making it do tictactoe
+creates multiple organisms to play, determines superiority based on w/l, evolves winner
+use 1, -1 and 0s to represent x's o's and blanks
+then turned into a string
+then receive a string telling how favorable the computer thinks the board state is
+Class 6 part 1
+reviewing the xor implementation,
+refer back to this video for the ways to input training data, specifically csv files
+
+Finishing here, I think I understand basically everything I'll need to do my presentation and program - the only thing I'm clueless on is the way to program the input neurons and inputs for analyzing pictograms
+so I'm on the lookout for the way to complete that task
