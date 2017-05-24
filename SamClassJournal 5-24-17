@@ -1,0 +1,11 @@
+Today I'm watching the example of the XOR gate for implementation, aka class 6
+
+NOTES: 
+K, finished xor, moving on to simulated annealing
+another way of training feedforward
+randomization process that cools off?
+based on real-world annealing, metallurgy thing
+simulated annealing algortihm is passed starting and ending temp plus number of cycles per iteration
+stopping here 410 degrees
+
+I've finished looking at his implementation of xor and started to determine if I'll use genetic algorithms or simulated annealing to train my network.
