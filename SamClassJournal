@@ -1,0 +1,22 @@
+Today, I'm going to be finally putting the pieces together for the kind of optical character recognition I'm going for. I will be compiling resources in this journal for this purpose. The things I will need are:
+-A training method: I will be using a genetic algorithm under a supervised training regime
+-A network: Feedforward will be the model used
+-A set of training data: TBD
+-A hidden layer mechanism for recognizing specific attributes needed for optical character recognition: TBD
+
+RESOURCES:
+-Jeff Heaton's optical character recognition: https://github.com/encog/encog-java-examples/tree/master/src/main/java/org/encog/examples/neural/gui/ocr
+-Helpful implementation guide: http://code-spot.co.za/2009/10/08/15-steps-to-implemented-a-neural-net/
+
+so Heaton's code is extremely complex - thus, my goal is to now attempt to unpack each element so I know precisely what does what. Then, since his only checks numbers, I'll attempt the modifications to do letters instead and use that as my program example
+
+skipping to class 13 part 1 for specific explanation of ocr
+self organizing map (class 12)
+starts trained for no characters, can train it for any letters
+downsampling? converted to lower-rez image
+downsampling explanation from part 2
+downsampling reduces number of input neurons needed by reducing images to consistent size and pixel resolution for the network, allows for position/size neutralization
+determine bounding limits for characters, line moves until it encounters a pixel and snaps back creating rectangle
+for downsampling, we put an 8x8 grid on top of the bounding rectangle, then turn the square black if there's a single pixel of black there in the image
+
+OK, I really need to talk with you because I'm at an impasse for what I should do for my program. Heaton has an OCR program up and it's pretty solid, so I'm wondering: should I, A. Focus on something like expanding the capabilities of heaton's work to things like numbers or other added features, or B. try something else?
