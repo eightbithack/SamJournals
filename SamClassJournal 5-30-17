@@ -1,0 +1,18 @@
+Ok, so I've figured out that I'll be producing a streamlined version of heaton's code: ditching the applet, instead training it with the MNIST data to recognize numbers with extreme accuracy, removing the extraneous bits and re-arranging the som to prevent the accidental acquisition of new hidden layers
+as such, today I'm reading more into the som so I can get a sense of where my modifications need to occur
+
+NOTES: 
+som is self organizing map
+has two layers, input and output: input has the patterns you want to classify, output has the number of patterns you want organized into
+uses grid to produce input patterns, output would be letters for heaton (numbers for me)
+winner take all strategy, one input wins to classify training example
+input normalization needed - can use z-axis or multiplicative
+no hidden layers, calc similar to feedforward, still use weight dot product, doesn't use backprop
+multipilcative uses vectors to produce normalization factor
+z-axis is better though, not dependent on data: is i/square of n
+not if all values close to zero though
+no values? just classifying, involves forcing a winner among the output neurons by adjusting weights
+
+Okay, I think I get how to shift the way heaton's basic concept for recognition is trained to change it to number recognition
+I'll be outlining exactly what things in his code are irrelevant to my end goal and what needs to be added over the next week
+
