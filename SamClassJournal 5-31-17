@@ -1,0 +1,24 @@
+Today I'll be continuing my assessment of what areas of the self-organizing map integrated into the example posted by Heaton should be separated to transition his program from an applet that is trained to learn drawn pictograms to one capable of analyzing numerical inputs
+
+off on a tangent, the main snag I'm going to need to address is to create some way to input the mnist pictures into a format that the network can recognize: since heaton's code revolves around the creation of an 8x8 grid as part of the applet in order to bypass the need for downsampling, I need to create some sort of bridge that will convert a picture into a downsampled boolean grid. This is the principle challenge at the moment: I understand the network itself well enough to make my modifications work now, I just need this piece so that I can efficiently train the network.
+
+ok, I think I've figured out the broad strokes of what needs to be done here. The program for the images needs to convert the images to pdm, a format where they're stored as binary values representing black and white. Thus, an image can be downsampled to the appropriate size by taking equal samples from across the image and making the "grouped" pixel black if it contains any black pixels, then once you have a 8x8 array, filling the boolean array where 1's are returned as true and the rest false, allowing the machine to interpret the image as a boolean. 
+
+I forsee one issue so far: while the MNIST data is already stored in pdm, which is good, the file won't unzip, which is bad. Thus, I need to work out a way to extract the relevant data from the downloaded file so I can actually run it through the code. Second random thought: this might take a while to train - I might need to either come early or figure out a way that I can train the network and have it keep its training over time. Obviously this is possible - programs like AlphaGo prove it - but does it do this automatically? Will investigate
+
+considering adapting stackoverflow answer to import numbers into java - https://stackoverflow.com/questions/8286668/how-to-read-mnist-data-in-c - seems like a way to get them, then pass the list into the testing class which would downsize them and train the array with it?
+
+also on the table is using a slightly less large data set *shrug*
+
+ok, first things I need to install jeff heaton's repository... I'm getting a little ambitious
+
+downsampling algorithm: https://stackoverflow.com/questions/1594543/how-to-write-a-downsampling-function-in-java
+
+I'm getting kinda anxious but I can see what needs to be done. In order:
+-figure out a way to read through the MNIST data
+-then downsample the MNIST data so that it can be converted into a format readable by heaton's SOM template for ocr
+-then reconfigure heaton's network so that the output neurons in question are the numbers
+
+hopefully at that point, the network will be able to get the error down
+
+NOTES: 
