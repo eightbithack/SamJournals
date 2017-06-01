@@ -1,0 +1,10 @@
+wooh, coming down to the wire here... ok, let's set a timetable. 
+The end result is due on the 15th, but I'd like to be done some time before that. Therefore, this is what I'm looking at for a timeframe:
+this week: figure out a way to translate the mnist data
+next week: create the downsampling bridge for entering said data into the network
+final week: fix issues between data being entered and the network
+
+so today and tomorrow I'll be focusing on the creation of the reading code
+I posted an example that might work on yesterday's journal, so that's where I'll begin
+I have also located a file of the images as, well, images, so that's plan b here
+ok, I'd like to voice serious concerns about the feasibility of any kind of major undertaking, but I can see what I plan to do. Fair warning, that plan is to gut the trappings of heaton's ocr program, reconfigure his inputs for the SOM to improve accuracy, and train it with more images, then use the testing data as proof that the code works.
