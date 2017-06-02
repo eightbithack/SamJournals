@@ -1,0 +1,6 @@
+ok, plan b it is. We've already done the code for using images from other files and all the images are named using a set of increasing numerical characters, so I think that my current plan for image extraction is to repurpose a for loop to add all of the images to an arrayList trainingData, with the labels now becoming the next question. Once we've finished extraction, the computer will pass the images to the downsampling class for training. Now I need to look into two things: how the labels are stored and a downsampling class
+
+Ok, I've committed to making the stackoverflow example work, since it appears to be almost functional as-is
+
+bell rings, and I'm triumphant - code for converting mnist has been integrated in a way that I could incorporate it into the heaton package - will be in repository
+
