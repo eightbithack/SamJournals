@@ -4,3 +4,6 @@ Ok, I've committed to making the stackoverflow example work, since it appears to
 
 bell rings, and I'm triumphant - code for converting mnist has been integrated in a way that I could incorporate it into the heaton package - will be in repository
 
+ok, i've completed one of three goals - I now have access to the required data in java. The next step is converting from the images (28x28) by downsampling to force them to code, as it were
+
+the digit image class has the label and the image, so structurally this is what's gonna happen - the training class will run through the array putting in the labels as what to train and the images as the thing to train with, calling the downsampling method in order to make the image fit, as it were. Then, it works as intended.
