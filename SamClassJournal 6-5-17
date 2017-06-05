@@ -1,0 +1,7 @@
+Ok, now that I've got the classes for interpreting MNIST, it's time to begin digging into Heaton's OCRSOM to understand where the training process can be integrated
+
+ok, I think I've got the likely point integration: Heaton created a separate subclass meant to regulate the data entering the network for training (SampleData), so I can probably re-write those methods to take the data from the image loader
+
+oh! I forgot the need to downsample! I mean, I don't think it's difficult - as a logical roadmap, the code would use a series of for loops to iterate through a subset of rows and columns, and if it finds a 1 signifying a black pixel, in the new downsampled grid the pixel representing that segment would become a 1, i.e, black
+
+ok, my goal for this week is to connect the dots here - to plug the MNIST data into heaton's SOM and present them, if possible, side-by-side, to show how large data sets can vastly improve the analytical ability of a neural network
