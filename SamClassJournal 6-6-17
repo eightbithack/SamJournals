@@ -1,0 +1,14 @@
+Ok, so plan alter the size of the data that the heaton som intakes was a dismal failure - there's something I'm not understanding in the math that's throwing up errors - so plan downsampling bridge class to produce valid inputs is a go.
+
+Today, I'll do the analysis of how downsampling would work and try and find how to change heaton's grid from letters to numbers
+
+*smacks self* I don't need to change heaton's network - that's exactly the advantage of an som, that I don't need to re-adjust the parameters depending on the dataset in this case! I just need to create the format to read the data and match the numbers with their labels and downsample them correctly
+
+...and here's where we get complicated again. I THINK I could figure out exactly how to interpret the data so that it downsamples correctly, but I don't fully understand the format it's encoded in. Hmmm....
+
+after another brief bit of analysis, I can confirm a bit about the way the code I'm using interprets MNIST. It converts the unsigned bits streamed into 1's and 0's based on Otsu's threshold, then creates 28x28 strings of bytes... that's it. It creates 28 bytes each with 28 bits i'm an idiot that's not how bytes work
+
+got it this time. the copyrange method takes a section of the total datastream using a loop to get an image and label for everything, with the 16 character OFFSET for magic number, size of image and number of images
+
+
+
