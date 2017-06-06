@@ -10,5 +10,9 @@ after another brief bit of analysis, I can confirm a bit about the way the code 
 
 got it this time. the copyrange method takes a section of the total datastream using a loop to get an image and label for everything, with the 16 character OFFSET for magic number, size of image and number of images
 
+ok, I have part 1 - a program set to take in and interpret the MNIST data - and part 3 - the som that can take in the numbers and learn to organize - but not the middle bit, a way to downsample the 28x28 images I'll receive from the MNIST dataset. There's two possibilities here. Plan A, which I'm attempting now, is to try and hunt down the root of the downsampling error that occurs when I try and manually alter the parameters of the som. Plan B is to default to attempting a downsampling class that can transform a 28x28 to a 5x7 - not something I have great hopes for in terms of accuracy. 
+
+Got it - heaton hardcoded two variables so they returned errors when I attempted to adjust the downsampling range. I think a 28x28 will take too long to train, but downsampling a 28x28 to a 7x7 is far simpler than to a 5x7.
+
 
 
