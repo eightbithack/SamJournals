@@ -1,0 +1,3 @@
+Today's the day: downsampling. Obviously this works by taking averages, but I think the best way to do it is to make it so that the data image samples in grids of 2x2. So logically, stuff would happen - see revised digit image class with method included - trick is just to call the class to downsample its own data twice.
+
+Ok downsampler should work. Goal from this point on is to get the bridge working in terms of plugging in the data and ensuring that the input format is correct
